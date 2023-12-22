@@ -3,21 +3,14 @@ use std::collections::HashMap;
 impl Solution {
     pub fn group_anagrams(strs: Vec<String>) -> Vec<Vec<String>> {
         let mut groups: HashMap<Vec<char>, Vec<String>> = HashMap::new();
-        let normalized = strs.iter().map(|s| {
+
+        for s in strs {
             let mut sorted = s.chars().collect::<Vec<char>>();
             sorted.sort();
-            (sorted, s.clone())
-        });
-
-        for item in normalized {
-            if let Some(existing) = groups.get_mut(&item.0) {
-                existing.push(item.1);
-            } else {
-                groups.insert(item.0, vec![item.1]);
-            }
+            groups.entry(sorted).or_insert(vec![]).push(s);
         }
 
-        groups.values().map(|group| group.clone()).collect()
+        groups.values().cloned().collect()
     }
 }
 
