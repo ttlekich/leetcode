@@ -2,6 +2,7 @@
     "rust-analyzer.linkedProjects": [
         "./duplicates/Cargo.toml",
         "./valid_anagram/Cargo.toml",
-        "./two_sum/Cargo.toml"
+        "./two_sum/Cargo.toml",
+        "./group_anagrams/Cargo.toml"
     ]
 }
