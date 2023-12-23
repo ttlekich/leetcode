@@ -3,6 +3,8 @@
         "./duplicates/Cargo.toml",
         "./valid_anagram/Cargo.toml",
         "./two_sum/Cargo.toml",
-        "./group_anagrams/Cargo.toml"
-    ]
+        "./group_anagrams/Cargo.toml",
+        "./top_k_frequent/Cargo.toml"
+    ],
+    "cSpell.words": ["nums"]
 }
