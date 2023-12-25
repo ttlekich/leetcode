@@ -5,7 +5,8 @@
         "./two_sum/Cargo.toml",
         "./group_anagrams/Cargo.toml",
         "./top_k_frequent/Cargo.toml",
-        "./product_except_self/Cargo.toml"
+        "./product_except_self/Cargo.toml",
+        "./valid_sudoku/Cargo.toml"
     ],
     "cSpell.words": ["nums"]
 }
